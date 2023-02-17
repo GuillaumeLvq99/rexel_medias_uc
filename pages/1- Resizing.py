@@ -13,20 +13,9 @@ Created on Wed Jan 18 10:29:37 2023
     # Regarder pour mettre des photos cote à cote 
 
 import streamlit as st
-import pandas as pd
-import pandas as pd
-import matplotlib.pyplot as plt
-import plotly.express as px
-import plotly.graph_objects as go
 import numpy as np 
-from plotly.subplots import make_subplots
-import plotly.figure_factory as ff
 from PIL import Image # pip install Pillow
-import sys
-import glob
 from PIL import ImageOps
-import numpy as np
-import cv2 as cv
 
 def crop(image,padding=0):
     padding = np.asarray([-1*padding, -1*padding, padding, padding])
