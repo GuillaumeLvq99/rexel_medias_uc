@@ -10,19 +10,9 @@ Created on Wed Jan 18 10:29:37 2023
 # https://docs.streamlit.io/library/api-reference/widgets
 
 import streamlit as st
-import pandas as pd, numpy as np
-import os
 import imagehash
 from PIL import Image
-import itertools
-from pandarallel import pandarallel
-from matplotlib import pyplot
-import plotly.graph_objects as go
-from plotly.offline import download_plotlyjs, init_notebook_mode,  plot
-import plotly.io as pio
-from sklearn import metrics
-pio.renderers.default='browser'
-import plotly.express as px
+
 
 hashfuncs = {
 	'ahash': imagehash.average_hash,
